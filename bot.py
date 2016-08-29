@@ -83,4 +83,4 @@ async def on_message(message):
             await notfound(message,command)
     elif message.content.startswith('!shitpost'):
         await client.send_message(message.channel,'*LOUDLY SHITPOSTS*')
-client.run('MjE5Mjc4MDIxMjkzNTA2NTc0.CqPaIg.tBEh-iArAI7dcn9w1y9uE7ge4uw')
+client.run('bot id here')
