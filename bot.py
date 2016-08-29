@@ -27,43 +27,6 @@ definition or would like to add to it, please PM my creator (<@16262749949748838
 the definition and he\'ll get to it as soon as he can.')
 
 
-
-
-
-
-
-
-###Commands########################################################################################
-
-async def wavedash(msg):
-    await client.send_message(msg.channel,'')
-    await EOM(msg)
-
-async def shitpost(msg):
-    await client.send_message(msg.channel,'To make shitty posts on an internet messageboard\n\
-example: https://i.imgur.com/y8bdpgR.jpg')
-    await EOM(msg)
-    
-async def shitposting(msg):
-    '''links to shitpost()'''
-    await shitpost(msg)
-async def shitposts(msg):
-    '''links to shitpost()'''
-    await shitpost(msg)
-async def taunt(msg):
-    await client.send_message(msg.channel,'A move intentionally designed to provoke, annoy, \
-disrespect, or mock opponents. It can be performed by pressing d-pad up. While taunts can \
-sometimes be used to please the crowd and therefore provide a moral boost to the one taunting, \
-some taunts are not well used and will have the opposite effect (see: SFAT)\n\
-More info: http://www.ssbwiki.com/Taunt \n\
-Example: http://www.ssbwiki.com/images/9/93/CaptainFalcon-Right-Taunt-SSBM.gif')
-    await EOM(msg)
-
-
-with open('articles/list of terms.txt') as f:
-    listofterms = f.readlines()
-###################################################################################################
-
 @client.event
 async def on_message(message):
     global listoftech
@@ -83,4 +46,5 @@ async def on_message(message):
             await notfound(message,command)
     elif message.content.startswith('!shitpost'):
         await client.send_message(message.channel,'*LOUDLY SHITPOSTS*')
+
 client.run('bot id here')
