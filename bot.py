@@ -1,10 +1,7 @@
 import discord
 import asyncio
 import re
-import urllib.request
-from PIL import Image
-import requests
-import io
+
 
 client = discord.Client()
 
